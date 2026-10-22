@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>اهودا تکنیک | فروش لوله‌های خرطومی</title>
+  <meta name="description" content="فروشگاه اهودا تکنیک، عرضه‌کننده لوله‌های خرطومی. برای دریافت اطلاعات محصولات و استعلام قیمت با شماره 09124139660 تماس بگیرید.">
+  <meta name="theme-color" content="#102d46">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    :root {
+      --navy: #102d46;
+      --blue: #1769aa;
+      --orange: #ff9d28;
+      --light: #f3f7fb;
+      --text: #243449;
+      --white: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.9;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 3px 15px #0002;
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+
+    .logo {
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: var(--orange);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: var(--orange);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 23px;
+      border-radius: 9px;
+      background: var(--orange);
+      color: #172c3e;
+      font-weight: bold;
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+      font-size: 15px;
+      transition: .2s;
+    }
+
+    .btn:hover {
+      background: #ffc064;
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      background:
+        linear-gradient(90deg, #102d46f5 0%, #102d46d9 50%, #102d4680 100%),
+        url("https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1600&q=85")
+        center / cover;
+      color: white;
+      padding: 95px 0;
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .tag {
+      color: var(--orange);
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(30px, 5vw, 49px);
+      line-height: 1.6;
+      margin: 12px 0;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #e6edf5;
+      margin-bottom: 28px;
+    }
+
+    .hero strong {
+      color: var(--orange);
+    }
+
+    section {
+      padding: 65px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+      color: var(--navy);
+      font-size: 29px;
+      margin: 0 0 8px;
+    }
+
+    .section-title p {
+      color: #68798a;
+      margin: 0;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .feature {
+      background: white;
+      padding: 26px;
+      border-radius: 15px;
+      border: 1px solid #e3eaf0;
+      box-shadow: 0 6px 20px #102d4608;
+    }
+
+    .feature .icon {
+      font-size: 35px;
+    }
+
+    .feature h3 {
+      color: var(--navy);
+      margin: 8px 0;
+    }
+
+    .feature p {
+      color: #68798a;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .products {
+      background: white;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .product {
+      border: 1px solid #e1e8ef;
+      border-radius: 14px;
+      overflow: hidden;
+      background: white;
+      transition: .2s;
+    }
+
+    .product:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px #102d4614;
+    }
+
+    .product-visual {
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 76px;
+      background: linear-gradient(135deg, #e8f1f9, #f8fafc);
+    }
+
+    .product-content {
+      padding: 22px;
+    }
+
+    .product h3 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    .product p {
+      color: #68798a;
+      font-size: 14px;
+    }
+
+    .product .btn {
+      width: 100%;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      border: 1px solid #e3eaf0;
+    }
+
+    .about-box h2 {
+      color: var(--navy);
+    }
+
+    .check {
+      list-style: none;
+      padding: 0;
+    }
+
+    .check li {
+      margin: 12px 0;
+    }
+
+    .check li::before {
+      content: "✓";
+      color: #15803d;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .contact {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 30px;
+      margin-top: 0;
+    }
+
+    .contact p {
+      color: #e0e8f0;
+    }
+
+    .phone {
+      display: inline-block;
+      direction: ltr;
+      color: var(--orange);
+      font-size: clamp(25px, 4vw, 36px);
+      font-weight: bold;
+      margin: 12px 0 24px;
+    }
+
+    footer {
+      background: #091e30;
+      color: #c8d4df;
+      text-align: center;
+      padding: 25px 12px;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: var(--orange);
+    }
+
+    @media (max-width: 760px) {
+      .nav {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .features,
+      .product-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 45px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <a href="#home" class="logo">اهودا <span>تکنیک</span></a>
+
+      <nav class="nav-links" aria-label="منوی اصلی">
+        <a href="#home">صفحه اصلی</a>
+        <a href="#products">محصولات</a>
+        <a href="#about">درباره ما</a>
+        <a href="#contact">تماس با ما</a>
+      </nav>
+
+      <a class="btn" href="tel:09124139660">تماس با فروشگاه</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="tag">فروشگاه لوله‌های خرطومی</div>
+
+          <h1>
+            اهودا تکنیک؛
+            <strong>انتخابی مطمئن</strong>
+            برای نیازهای صنعتی شما
+          </h1>
+
+          <p>
+            برای انتخاب لوله خرطومی مناسب، دریافت اطلاعات محصولات
+            و استعلام قیمت، با اهودا تکنیک در ارتباط باشید.
+          </p>
+
+          <a class="btn" href="#products">مشاهده محصولات</a>
+          <a class="btn" href="tel:09124139660"
+             style="background:white; margin-right:8px;">
+            ☎ تماس مستقیم
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>چرا اهودا تکنیک؟</h2>
+          <p>برای انتخاب بهتر، اطلاعات محصول را با نیاز خود مقایسه کنید.</p>
+        </div>
+
+        <div class="features">
+          <article class="feature">
+            <div class="icon">〰️</div>
+            <h3>انواع لوله خرطومی</h3>
+            <p>
+              برای آشنایی با مدل‌های قابل عرضه و کاربرد هر محصول
+              با فروشگاه تماس بگیرید.
+            </p>
+          </article>
+
+          <article class="feature">
+            <div class="icon">☎️</div>
+            <h3>مشاوره پیش از خرید</h3>
+            <p>
+              درباره نوع کاربرد، ابعاد و مشخصات فنی موردنیاز
+              سؤال کنید تا انتخاب مناسب‌تری داشته باشید.
+            </p>
+          </article>
+
+          <article class="feature">
+            <div class="icon">📋</div>
+            <h3>استعلام قیمت</h3>
+            <p>
+              برای دریافت قیمت روز و اطلاع از موجودی محصولات،
+              مستقیماً با فروشگاه در ارتباط باشید.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-title">
+          <h2>محصولات اهودا تکنیک</h2>
+          <p>
+            برای بررسی موجودی، جنس، سایز و مشخصات فنی هر مدل تماس بگیرید.
+          </p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product">
+            <div class="product-visual" aria-hidden="true">〰️</div>
+            <div class="product-content">
+              <h3>لوله خرطومی</h3>
+              <p>
+                برای دریافت اطلاعات مدل‌های موجود و کاربردهای
+                قابل استفاده، با کارشناسان فروش تماس بگیرید.
+              </p>
+              <a class="btn" href="tel:09124139660">
+                استعلام قیمت
+              </a>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-visual" aria-hidden="true">🔩</div>
+            <div class="product-content">
+              <h3>لوله خرطومی صنعتی</h3>
+              <p>
+                مشخصات فنی، شرایط استفاده و سازگاری محصول با
+                کاربرد موردنظر خود را بررسی کنید.
+              </p>
+              <a class="btn" href="tel:09124139660">
+                دریافت اطلاعات
+              </a>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-visual" aria-hidden="true">⚙️</div>
+            <div class="product-content">
+              <h3>سفارش لوله خرطومی</h3>
+              <p>
+                برای پیگیری سفارش و بررسی امکان تأمین سایز
+                و مدل موردنظر، با فروشگاه تماس بگیرید.
+              </p>
+              <a class="btn" href="tel:09124139660">
+                ثبت درخواست خرید
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div>
+          <div class="tag">درباره فروشگاه</div>
+          <h2>اهودا تکنیک، همراه انتخاب شما</h2>
+          <p>
+            در اهودا تکنیک می‌توانید برای خرید لوله‌های خرطومی،
+            بررسی مشخصات فنی و استعلام قیمت با فروشگاه تماس بگیرید.
+            انتخاب صحیح محصول به نوع کاربرد، شرایط محیطی،
+            جنس و قطر موردنیاز بستگی دارد.
+          </p>
+          <a class="btn" href="#contact">ارتباط با فروشگاه</a>
+        </div>
+
+        <div class="about-box">
+          <h2>پیش از سفارش بررسی کنید</h2>
+          <ul class="check">
+            <li>قطر و طول موردنیاز</li>
+            <li>جنس و انعطاف‌پذیری لوله</li>
+            <li>دمای کاری و شرایط محیط استفاده</li>
+            <li>کاربرد و مشخصات فنی موردنیاز</li>
+            <li>قیمت روز و موجودی کالا</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>برای خرید و استعلام قیمت تماس بگیرید</h2>
+        <p>
+          برای دریافت اطلاعات محصولات لوله خرطومی
+          و پیگیری سفارش با اهودا تکنیک در ارتباط باشید.
+        </p>
+
+        <a class="phone" href="tel:09124139660">
+          09124139660
+        </a>
+        <br>
+
+        <a class="btn" href="tel:09124139660">
+          ☎ تماس با 09124139660
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <strong>اهودا تکنیک</strong> | فروش لوله‌های خرطومی
+    </p>
+    <p>تماس با فروشگاه: 09124139660</p>
+    <p>© تمامی حقوق این وب‌سایت محفوظ است.</p>
+  </footer>
+
+</body>
+</html>
