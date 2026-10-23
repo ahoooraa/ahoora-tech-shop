@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://reg2.enamad.ir/TechnicalAccess/TechnicalAccess -->
+<html style="font-family: IRANSans; height: auto; min-height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>نماد تجارت الکترونیکی</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="https://reg2.enamad.ir/resource/images/favicon_1.ico" rel="icon">
+    <link href="./نماد تجارت الکترونیکی_files/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link href="./نماد تجارت الکترونیکی_files/rtl.css" rel="stylesheet" type="text/css">
+    <link href="./نماد تجارت الکترونیکی_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./نماد تجارت الکترونیکی_files/AdminLTE.css" rel="stylesheet" type="text/css">
+    <link href="./نماد تجارت الکترونیکی_files/_all-skins.minVG.css" rel="stylesheet" type="text/css">
+    <link href="./نماد تجارت الکترونیکی_files/ConfirmModal.css" rel="stylesheet" type="text/css">
+    <link href="./نماد تجارت الکترونیکی_files/tostify.min.css" rel="stylesheet" type="text/css">
+    <link href="./نماد تجارت الکترونیکی_files/General.css" rel="stylesheet" type="text/css">
+    <link href="./نماد تجارت الکترونیکی_files/PersianDatePicker.min.css" rel="stylesheet" type="text/css">
+    <script src="./نماد تجارت الکترونیکی_files/jquery.min.js.download" type="text/javascript"></script>
+    <script src="./نماد تجارت الکترونیکی_files/bootstrap.min.js.download"></script>
+    <script src="./نماد تجارت الکترونیکی_files/adminlte.min.js.download"></script>
+    <script src="./نماد تجارت الکترونیکی_files/modalHandlers.js.download"></script>
+    <script src="./نماد تجارت الکترونیکی_files/PersianDatePicker.min.js.download" type="text/javascript"></script>
+    <link href="./نماد تجارت الکترونیکی_files/CAMColor.css" rel="stylesheet" type="text/css">
+    <link href="./نماد تجارت الکترونیکی_files/btn2.css" rel="stylesheet" type="text/css">
+<style>
+    a {
+        color: #000;
+        cursor: pointer;
+    }
+
+    .bc-dark-red {
+        background-color: #630000;
+        border: 1px solid #630000;
+        color: #FFF;
+    }
+
+    .bc-dark-red:hover {
+        background-color: #FFF;
+
+        color: #000000;
+    }
+
+    .row-hoverable:hover {
+        background-color: #ffff0085 !important;
+    }
+
+    .selected3 {
+        background-color: #7fe2ee54 !important;
+    }
+
+    .fixed-btn {
+        margin-top: 4px;
+        font-size: 13px;
+        font-weight: bold;
+        color: #FFFFFF;
+        left: 1px;
+        position: fixed;
+        z-index: 99999;
+        cursor: pointer;
+    }
+
+    .fixed-btn > i {
+        margin-right: 5px;
+    }
+
+    .active2 {
+        color: #111;
+        background-color: #aaa7a354;
+        margin-right: -5px;
+        margin-right: -12px;
+    }
+</style></head>
+
+<body class="skin-blue sidebar-mini" style="height: auto; min-height: 100%;">
+
+
+
+
+
+<script src="./نماد تجارت الکترونیکی_files/tostify.min.js.download"></script>
+<script>
+    var jsonContent = "application/json; charset=UTF-8";
+    var formUrlContent = "application/x-www-form-urlencoded; charset=UTF-8";</script>
+<script>
+    $(document).ajaxComplete(function(event, xhr, settings) {
+       /* const zakhireh = xhr.getResponseHeader('X-Zakhireh');
+        if (zakhireh) {
+            document.getElementById('zakhirehInput').value = zakhireh;
+        }*/
+        let t = xhr.getResponseHeader('t');
+        document.getElementsByName('token').forEach(function(item){item.value = t})
+    });
+    function loaderOnElement(id, status) {
+        if (status == 'on' && document.getElementById(id + '-loader') == null) {
+            var element = document.getElementById(id);
+            var loaderElement = '<div id="' + id + '-loader" style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.6);z-index: 1000;display: block">'
+                + '<img src="../resource/images/loader.gif" alt="" style="z-index:504110901; width: 70px; top: 20%; position: absolute; left: 45%; ">'
+                + '</div>';
+            element.insertAdjacentHTML('afterbegin', loaderElement);
+        } else if (status == 'off' && document.getElementById(id + '-loader') != null) {
+            document.getElementById(id + '-loader').remove();
+        }
+    }
+
+    function toast(text, bgColor, duration) {
+        Toastify({
+            text: text,
+            duration: duration * 1000,
+            newWindow: true,
+            close: true,
+            gravity: "bottom",
+            position: "center",
+            backgroundColor: toastColorPicker(bgColor),
+            stopOnFocus: true,
+            onClick: function () {
+            }
+        }).showToast();
+    }
+
+    function toastColorPicker(bgColor) {
+        switch (bgColor) {
+            case "error":
+                return "#de4435";
+            case "warning" :
+                return "#ff7321";
+            case "success":
+                return "#11941b";
+            default :
+                return bgColor;
+        }
+    }
+</script>
+<div id="boxLoader" style="position: fixed; inset: 0px; background-color: rgba(0, 0, 0, 0.6); z-index: 100000; display: none;">
+    <img src="./نماد تجارت الکترونیکی_files/loader.gif" alt="" style="z-index:5041109000001; width: 70px; top: 40%; position: absolute; left: 45%; ">
+</div>
+<form method="GET" id="ssoLogOut" action="https://sso.my.gov.ir/login?logout">
+</form>
+
+<form method="GET" id="rotbeBandiFrm" action="https://ecrating.ir/panel/IndexFromEnamad?nationalId=0079343910" target="_blank">
+    <input type="hidden" name="nationalId" value="0079343910">
+
+</form>
+
+
+<form method="POST" id="shekayatFrm" action="https://reg2.enamad.ir/TechnicalAccess/TechnicalAccess" target="_blank">
+</form>
+
+
+<form method="POST" id="frmHandller" name="frmHandller">
+    <input id="token" name="token" type="hidden" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiVDZhdXNUMHhuOHlnZW1mbTdmTGQxUHJjeEQ3NTJwRE0yYTdKUmtqRGJVVitoamdXbzBJcFZvVHlVeFczMlFtVVZSM3hpZnBwYU9uT2xDc1VSaXF3WXVFOXp4VGFYUUcwMWkyYlhpMUdkTDBUbTlQQWhLZ0FGNDNLSzdRTmNuKzBDTWdCd2RnY3E2bDEyQWlFY0RBYnBlK216ZXV3ekZ3a0VhYk1QOHBLaUxEQzBJSnR2MnMvYVJyekthaHlmTWh2WXNJclRTVFZsdnB5aHB1aldlemd5TWVDZW9Ib0E3NDZaRVllcWhOa21CajdYUHpMRXcrc1ZCM1BCdFJ2R3hkVnlJc2ZVWVZQTEVLc1F5dHhReEFIcmFBd21pdlMyTlExditZNS94WjhvQWViVCt0MytSMTRDd1JuSzhrb05UbjUwQkxLeXpyYVhnOFUyc29ObXpteUF6ZGhtSEc0WTkrNVhBQlUrQ0Y1SXhiQ0l3bzN5aklVVVJWbHpIRWtxQ1BRK0RWM0EvZWlsaDNWa3NtaGJJMzA5VmxHQ3RNdGNScWxmL0w0UzFZMUtLSWkyWC90OWkyTDhySWRIcVFMU0RCaURyKzBMZjBuYmp4SWNOUFcwOGhKbWVjSmlybTBzcEczQlVEd0pZOEw1emhJdTJKaitMWlV2UzhXT2tGUTVsN3pIckZTcUxnTmg0OUlJLzIxcEJSdWpwRXJBelNrRG9DeVB4SHp0RFMwaHNoaldRMlhSQnY0dnQ4VHBQYVF4bW5GZGxoOUtwemE5ZFd1MHNjN3l2RkkvcFNaZWhpaTFzUmpoM2RtY0tXQ2ZEYmd4MWZCejlORnBMU1ZBTUhyNkZyVkJ0UGF1eDBsMkxXVmt1ZHBIR1FrdDdQSmJMd2JRUDVaNHdoTzRTQXBFdGNoRUJwUC92dnVkbUxjQnRTbnN4a1dKcEJoaFg3enU5OThHRGgwZ05yUFhHaGN6ZUI0TmdFeFJQMHFWSVgzZ05JRytwSEdHckZUVUJKUFBGOFZJeU0wMHQ5TTFITXNlM094Uk5OSVNONEh0cXpZWXVobmk4Wk16eEZ2akpJNUFleW0wWkcrbDVrUVRPNGZwazJGL09YdTl5MWlxdWFOSWdyMkY3amlheEtINWdPMDQ2cEJpR1MrcG5kQ1FGWEVEcVN6b3RURld4SzRsY2hMQmxLekFYblZZR054SElOazRDSG9tVW1HS04wRjlaUFljZkIxU0laOTVsbkxVMXpzWW5jV3VzcytQbS9pYkIxODltQnh5UTUzc1h0MVRmV0hqSXNETUQzbkNqbU9wb2tiQytvbkpDWFlQWU9YdWtTRDl0UkdoTTJKelZUL1VjbE9vUDJHYStyYkh6cUdwNVpqNUd6dHBXR284WEVlUS9JV3NMQUtBYmtlOC9IdDQ3b2pSamxld2NGa3ZKcDBEc0JWOENWZkplRlkiLCJpc3MiOiJ0c2luY28uaXIiLCJleHAiOjE3OTI3NTkyMzB9.Q1BWcCH1lv5AIUHaONSiOU-rhDmtJsMpGLW2KR3nrAQ#rcbFvmvT8xZxeIibku1LRiN0KJqFCHiU">
+    <input id="csrf-token" name="csrf-token" type="hidden" value="MUkpUyQfeXfadco-ONh3sp1BeGVKkoHb">
+    <input type="hidden" value="FYiLu4awBh1sA+qpQgRuVQ==" id="dId" name="dId">
+    <input type="hidden" value="Ehdee83P296Lr9MXXUdF3g==" id="rId" name="rId">
+    <input type="hidden" value="X5cMPLjyflTK+DLnxpRtPA==" id="bt" name="bt">
+    <input type="hidden" value="1OPIDSCUX0C9/fJzu9bflMirtmdpkAMTaLkTajlwy4E=" id="daaa" name="daaa">
+    <input type="hidden" value="" id="msg" name="msg">
+    <input type="hidden" value="" id="es" name="es">
+    <input type="hidden" value="" id="rs" name="rs">
+    
+    <input type="hidden" value="X5cMPLjyflTK+DLnxpRtPA==" id="rt" name="rt">
+</form>
+
+<div class="wrapper" style="background-color: rgb(236, 240, 245); height: auto; min-height: 100%;">
+    <header class="main-header ">
+        <a href="https://reg2.enamad.ir/TechnicalAccess/TechnicalAccess#" class="logo lc1">
+            <span class="logo-lg lc1"><b>اینماد</b></span><br>
+            <span></span>
+        </a>
+        <nav class="navbar navbar-static-top hc1 b0">
+            <a href="https://reg2.enamad.ir/TechnicalAccess/TechnicalAccess#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only"></span>
+            </a>
+            <a class="btn hidden-xs" style="width: auto;margin:1px 1px;padding:12px 1px;font-weight:bold;color: white">
+                
+                
+                
+                
+                محمد صفری اقدم
+                
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown user user-menu">
+                        <a href="https://reg2.enamad.ir/TechnicalAccess/TechnicalAccess#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="./نماد تجارت الکترونیکی_files/logout3.png" alt="" style="width: 20px;cursor: pointer">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="user-header">
+                                <i class="fa fa-user-circle-o" style="color: #fff;font-size: 40px;"></i><br>
+                                <p style="font-size: 14px;">
+                                    
+                                    
+                                    
+                                    
+                                    محمد صفری اقدم
+                                    
+                                </p>
+                            </li>
+                            <li class="user-footer" style="background-color: #fff;margin-top: 5px;">
+                                <div>
+                                            <span style="cursor: pointer" class="btn button-logout1 btn-block" onclick="logout(2)">خروج و بازگشت به انتخاب نقش شخص</span>
+                                </div>
+                                <div>
+                                            <span style="cursor: pointer;" class="btn button-logout btn-block" onclick="logout(1)"> خروج کلی از سامانه </span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://reg2.enamad.ir/TechnicalAccess/TechnicalAccess#" data-toggle="control-sidebar">نسخه ی 1.0.0</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="main-sidebar bc1">
+        <section class="sidebar">
+            <div class="user-panel">
+                <div class="pull-right image">
+                    <img src="./نماد تجارت الکترونیکی_files/enamad.png" class="img" style="width: 50px;" alt="User Image">
+                </div>
+                <div class="pull-right info">
+                    <span style="  float: left; width: 90%; font-family: &#39;tahoma&#39;;font-size: 11.2px; margin-top: 12px; " dir="ltr">IP: 5.200.96.138
+                                </span>
+
+                </div>
+            </div>
+            <form action="https://reg2.enamad.ir/TechnicalAccess/TechnicalAccess#" method="get" class="sidebar-form">
+            </form>
+            <ul class="sidebar-menu tree" data-widget="tree">
+                <li class=" treeview" id="h">
+
+                    <a id="h1" onclick="redirectFrm(&#39;../home/home&#39;)">
+                        <i class="fa fa-home"></i>داشبورد</a>
+
+                </li>
+                
+                <li class=" treeview" id="b">
+                    <a>
+                        <i class="fa fa-navicon"></i> <span> عملیات پایه </span>
+                        
+                        
+                        
+                        <span class="pull-left-container">
+                                    <i class="fa fa-angle-right pull-left"></i>
+                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li id="b1"><a onclick="redirectFrm(&#39;/BasicOperation/BusinessList&#39;)">
+                            مدیریت کسب و کار
+                        </a>
+                        </li>
+                        <li id="b3"><a onclick="redirectFrm(&#39;/BasicOperation/Requests&#39;)">
+                            مدیریت درخواست
+                        </a>
+                        </li>
+                        
+                        <li id="b4"><a onclick="redirectFrm(&#39;/BasicOperation/TransferOffers&#39;)">
+                            پیشنهادهای انتقال
+                            
+                        </a>
+
+                        </li>
+                        <li id="b5"><a onclick="redirectFrm(&#39;/BasicOperation/TafvisOffers&#39;)">
+                            پیشنهادهای تفویض اختیار
+                            
+                        </a>
+
+                        </li>
+                        <li id="b6"><a onclick="redirectFrm(&#39;/BasicOperation/FranchiseOffer&#39;)">
+                            پیشنهادهای نمایندگی
+                            
+                        </a>
+                            
+                        </li>
+                    </ul>
+                </li>
+                
+                
+                
+                <li class="treeview" id="d">
+                    <a onclick="redirectFrm(&#39;/DomainViolations/DomainList&#39;)">
+                        <i class="fa fa-warning"></i> <span>تخلفات</span>
+                        
+                        
+                        
+                        
+                    </a>
+                </li>
+                
+                
+                
+                <li class="treeview" id="s">
+                    <a>
+                        <i class="fa fa-commenting-o"></i> <span>پشتیبانی</span>
+                        
+                        
+                        
+                        <span class="pull-left-container">
+                                    <i class="fa fa-angle-right pull-left"></i>
+                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li id="s1"><a onclick="redirectFrm(&#39;/Support/SupportRequest&#39;)">
+                            درخواست پشتیبانی
+                        </a>
+
+                        </li>
+                        <li id="s2"><a onclick="redirectFrm(&#39;/Support/SupportRecordsList&#39;)">
+                            سوابق پشتیبانی
+                            
+                        </a>
+
+                        </li>
+                    </ul>
+                </li>
+                
+                
+                
+                <li class=" treeview" onclick="getShekayatUrl()">
+                    <a>
+                        <i class="fa fa-file-text-o"></i> <span>شکایت</span>
+                        <span class="pull-left-container">
+                                </span>
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class=" treeview" onclick="document.getElementById(&#39;notifyModal&#39;).style.display =&#39;block&#39;">
+                    <a>
+                        <i class="fa fa-star-o"></i> <span>رتبه بندی</span>
+
+                        <i class="fa fa-star pull-left " style="color: #ffc107;margin-left: 13px;font-size: 15px;"></i>
+                    </a>
+                </li>
+                
+                
+                
+                <li class="treeview" id="w" onclick="redirectFrm(&#39;/Logs/EntryAndExitLogs&#39;)">
+                    <a>
+                        <i class="fa  fa-arrow-circle-left "></i> <span>لاگ های ورود و خروج</span>
+                    </a>
+                </li>
+                
+                <li class="treeview" id="s">
+                    <a>
+                        <i class="fa fa-file"></i> <span>راهنمای سامانه</span>
+
+                        <span class="pull-left-container">
+                                    <i class="fa fa-angle-right pull-left"></i>
+                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li id="d1"><a href="https://reg2.enamad.ir/resource/pdf/sodornew.pdf" target="_blank">
+                            راهنمای صدور کسب و کار جدید
+                        </a>
+
+                        </li>
+                        <li id="d2"><a href="https://reg2.enamad.ir/resource/pdf/tamdidnew.pdf" target="_blank">
+                            راهنمای تمدید کسب و کار
+                            
+                        </a>
+
+                        </li>
+                        <li id="d3"><a href="https://reg2.enamad.ir/resource/pdf/editnew.pdf" target="_blank">
+                            راهنمای ویرایش کسب و کار
+                            
+                        </a>
+                        </li>
+                        <li id="d4"><a href="https://reg2.enamad.ir/resource/pdf/Generalguidenew.pdf" target="_blank">
+                            راهنمای کل سامانه
+                            
+                        </a>
+
+                        </li>
+                        <li id="d5"><a href="https://reg2.enamad.ir/resource/pdf/Transferandrepresentationguide.pdf" target="_blank">
+                            راهنمای انتقال،نمایندگی و تفویض اختیار
+                            
+                        </a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+            
+                
+                
+                
+                
+                
+                
+
+            </ul>
+
+        </section>
+    </aside>
+    <div class="content-wrapper" style="min-height: 902.438px;">
+        <section class="content">
+            
+
+<style>
+    #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+}
+</style>
+<button type="button" class="btn bfc3" id="btn-back-to-top" style="display: block;">
+    <i class="fa fa-arrow-up"></i>
+</button>
+<script>
+    let mybutton = document.getElementById("btn-back-to-top");
+    window.onscroll = function () {
+        scrollFunction();
+
+    };
+
+    function scrollFunction() {
+        if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+                ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    mybutton.addEventListener("click", backToTop);
+    function backToTop() {
+
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
+            
+
+
+<div class="modal" id="messageModal" style="display: none;">
+    <div class="modal-dialog" style="max-width: 700px;margin: auto">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById(&#39;messageModal&#39;).style.display = &#39;none&#39;">
+                    <span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">توجه</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    <ol class="breadcrumb2" style="background-color: #ffdddd">
+                        <p class="pf" id="messageText">
+                        </p>
+                    </ol>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="ac1" type="button" class="btn bfc5 btn-sm pull-left" style="margin-top: 20px;display: none" onclick="redirectFrm(&#39;../home/home&#39;)">ورود به داشبورد
+                </button>
+                <button id="ac2" type="button" class="btn bfc5 btn-sm pull-left" style="margin-top: 20px;display: none" onclick="redirectFrm(&#39;../BasicOperation/Requests&#39;)">ورود به مدیریت درخواست ها
+                </button>
+                <button id="ac3" type="button" class="btn bfc5 btn-sm pull-left" style="margin-top: 20px;display: none" onclick="redirectFrm(&#39;../DomainViolations/DomainList&#39;)">ورود به تخلفات
+                </button>
+                <button id="ac4" type="button" class="btn bfc5 btn-sm pull-left" style="margin-top: 20px;display: none">می خواهم درخواست انتقال را لغو کنم.
+                </button>
+
+                <button type="button" class="btn bfc6 btn-sm pull-right" style="margin-top: 20px;" onclick="document.getElementById(&#39;messageModal&#39;).style.display = &#39;none&#39;">متوجه شدم
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function showMessageModal(msg, buttonId, arg1, arg2, arg3, arg4) {
+        for (var i = 1; i <= 4; i++) {
+            document.getElementById("ac" + i).style.display = 'none';
+        }
+        document.getElementById("messageModal").style.display = 'block';
+        document.getElementById("messageText").innerHTML = msg;
+        if (Number(buttonId) >= 1 && Number(buttonId) <= 4) {
+            document.getElementById("ac" + buttonId).style.display = 'block';
+        }
+        if (arg1 != "" && arg2 != "" && arg3 != "" && arg4 != "") {
+            document.getElementById("ac" + buttonId).onclick = function () {
+                document.getElementById('messageModal').style.display = 'none';
+                cancelMoving(arg1, arg2, arg3, arg4);
+            };
+        }
+        if (buttonId == 2) {
+            document.getElementById("ac" + buttonId).onclick = function () {
+                document.getElementById('messageModal').style.display = 'none';
+                redirectFrm('/BasicOperation/Requests')
+            };
+        } else if (buttonId == 3) {
+            document.getElementById("ac" + buttonId).onclick = function () {
+                document.getElementById('messageModal').style.display = 'none';
+                redirectFrm('/DomainViolations/DomainList')
+            };
+        }
+    }
+</script>
+            
+
+
+
+
+    <script src="./نماد تجارت الکترونیکی_files/checkRequestCount.js.download" type="text/javascript"></script>
+    <style>
+        .div-bt {
+            margin-top: 35px;
+        }
+
+        @media (max-width: 980px) {
+
+            .div-bt {
+                margin-top: 5px;
+            }
+        }
+
+    </style>
+    
+
+ 
+<style>
+
+    .time-line-box {
+        width: 100%;
+        background-color: #fff;
+        height: 120px;
+        margin-top: -12px;
+    }
+
+    .time-line-box .timeline {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        text-align: center;
+    }
+
+    .time-line-box .timestamp {
+        margin: auto;
+        margin-bottom: 5px;
+        padding: 10px 4px 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .time-line-box .status {
+        padding: 0px 10px;
+        display: flex;
+        justify-content: center;
+        border-top: 3px solid #777;
+        position: relative;
+        transition: all 200ms ease-in;
+    }
+    .time-line-box .status span {
+        padding-top: 8px;
+    }
+    .time-line-box .status span:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 12px;
+        border: 2px solid #777;
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        transition: all 200ms ease-in;
+    }
+
+    .time-line-box .status-active {
+        padding: 0px 10px 30px;
+        display: flex;
+        justify-content: center;
+        border-top: 3px solid #f79421;
+        position: relative;
+        transition: all 200ms ease-in;
+    }
+    .time-line-box .status-active span {
+        padding-top: 8px;
+    }
+    .time-line-box .status-active span:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: #f79421;
+        border-radius: 12px;
+        border: 2px solid #f79421;
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        transition: all 200ms ease-in;
+    }
+
+    .swiper-container {
+        width: 100%;
+        margin: auto;
+        overflow-y: auto;
+    }
+    .swiper-wrapper{
+        display: inline-flex;
+        flex-direction: row;
+        overflow-y:auto;
+        justify-content: center;
+    }
+    .swiper-container::-webkit-scrollbar-track{
+        background:#999;
+
+    }
+    .swiper-container::-webkit-scrollbar{
+        height: 2px;
+        margin-top: -50px;
+
+    }
+    .swiper-container::-webkit-scrollbar-thumb{
+        background: #ffcc99 !important;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 12px;
+        width: 170px;
+        height: auto;
+        position: relative;
+        overflow-y: hidden;
+    }
+    .i-active{
+        font-size: 20px;
+        color: #f79421;
+    }
+    .s-active{
+        font-size: 14px;
+        color: #295697;
+        font-weight: bold;
+    }
+    .tl-i{
+        font-size: 20px;
+        color: #777;
+    }
+
+    .tl-s{
+        font-size: 14px;
+        color: #777;
+        font-weight: bold;
+    }
+
+</style>
+
+<section class="time-line-box">
+    <div class="swiper-container text-center"> 
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="d1">
+                <div class="timestamp">
+                    <i id="tt1" class="fa fa-user-circle-o i-active"></i> 
+                    <span id="ttt1" class="s-active">اطلاعات هویتی</span> 
+                </div>
+                <div class="status status-active" id="t1"><span></span></div>
+            </div>
+            <div class="swiper-slide" id="d2">
+                <div class="timestamp">
+                    <i id="tt2" class="fa fa-file-text i-active"></i> 
+                    <span id="ttt2" class="s-active">اطلاعات کسب و کار</span>
+                </div>
+                <div class="status status-active" id="t2"><span></span><br><br><br></div>
+            </div>
+            <div class="swiper-slide" id="d3">
+                <div class="timestamp">
+                    <i id="tt3" class="fa fa-gears i-active"></i> 
+                    <span id="ttt3" class="s-active">دسترسی فنی</span>
+                </div>
+                <div class="status status-active" id="t3"><span></span></div>
+            </div>
+
+
+
+
+
+
+
+            <div class="swiper-slide" id="d4">
+                <div class="timestamp">
+                    <i id="tt4" class="fa fa-check-square tl-i"></i>
+                    <span id="ttt4" class="tl-s">قانومندی کسب و کار</span>
+                </div>
+                <div class="status" id="t4"><span></span></div>
+            </div>
+            <div class="swiper-slide" id="d5">
+                <div class="timestamp">
+                    <i id="tt5" class="fa fa-phone-square tl-i"></i> 
+                    <span id="ttt5" class="tl-s">اطلاعات تماس </span>
+                </div>
+                <div class="status" id="t5"><span></span></div>
+            </div>
+
+
+            <div class="swiper-slide" id="d6">
+                <div class="timestamp">
+                    <i id="tt6" class="fa fa-check-square-o tl-i"></i> 
+                    <span id="ttt6" class="tl-s">تعهدنامه</span>
+                </div>
+                <div class="status" id="t6"><span></span></div>
+            </div>
+
+
+
+
+
+
+
+            <div class="swiper-slide" id="d7">
+                <div class="timestamp">
+                    <i id="tt7" class="fa fa-dollar tl-i"></i>
+                    <span id="ttt7" class="tl-s">پرداخت تعرفه</span>
+                </div>
+                <div class="status" id="t7"><span></span></div>
+            </div>
+            <div class="swiper-slide" id="d8">
+                <div class="timestamp">
+                    <i id="tt8" class="fa fa-folder-open tl-i"></i>
+                    <span id="ttt8" class="tl-s">دسترسی ها و امکانات</span>
+                </div>
+                <div class="status" id="t8"><span></span></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<script>
+    function showTimeLine(id) {
+        for (var i = 1; i <= 8; i++) {
+
+            document.getElementById("t" + i).classList.remove("status-active");
+        }
+        for (var j = 1; j <= Number(id) - 1; j++) {
+            document.getElementById("t" + j).classList.add("status-active");
+            document.getElementById("tt" + j).classList.remove("tl-i");
+            document.getElementById("tt" + j).classList.add("i-active");
+            document.getElementById("ttt" + j).classList.remove("tl-s");
+            document.getElementById("ttt" + j).classList.add("s-active");
+        }
+
+        document.getElementById("t" + id).classList.add("status-active");
+        document.getElementById("tt" + id).classList.remove("tl-i");
+        document.getElementById("tt" + id).classList.add("i-active");
+        document.getElementById("ttt" + id).classList.remove("tl-s");
+        document.getElementById("ttt" + id).classList.add("s-active");
+        var k = id;
+        var s = Number(k + 1);
+        if (id <= 7) {
+            const element = document.getElementById("d" + s);
+            element.scrollIntoView();
+        }
+        if (id == 8) {
+            const element = document.getElementById("d" + id);
+            element.scrollIntoView();
+        }
+    }
+
+
+</script>
+
+    
+    
+        <section class="content" style="background-color: #fff;">
+            <div class="d-he"><h3 class="f-h3">دسترسی فنی ahoorateknik.com</h3>
+                <hr class="pull-right he-hr2" style="width: 100px;">
+            </div>
+            <ol class="breadcrumb2 ">
+                <p class="pf" style="font-size: 14px;
+                    font-weight: 800"><i class="fa fa-info-circle bi-c1"></i>
+                    برای احراز دسترسی فنی به دامنه لازم است حداقل یکی از موارد زیر را انجام دهید.
+                    <br>
+                    # هر دو حالت http و https توسط سرور مرکز چک میشود، دامنه شما حداقل باید توسط یکی از این دوحالت در
+                    دسترس
+                    باشد.
+                </p>
+            </ol>
+            <ol class="breadcrumb2" style="background-color: #e22828;color: whitesmoke">
+                <p class="pf" style="margin: 0 0 1px;">
+                    <i class="fa fa-check-circle-o" style="color: #e32828;
+                                   font-size: 16px;"></i> کاربر گرامی، این بخش نیازمند دانش فنی و جهت اثبات مالکیت دامنه
+                    می باشد و حتما باید توسط شما یا طراح سایت شما انجام شود
+                    و روش اول که ایمیل است حتما باید به ایمیل info دامنه دسترسی داشته باشید، اگر دسترسی
+                    ندارید از سه روش دیگر استفاده کنید. امکان تغییر ایمیل به هیچ ایمیل دیگری نیست.
+                    درصورتیکه با این مرحله آشنایی ندارید از شخص فنی راهنمایی بگیرید
+                </p>
+            </ol>
+
+            <div class="box box-default" id="div-verification-1" style="display: block; box-shadow: rgb(232, 187, 147) 0px 1px 1px;">
+                <div class="box-header" style="color: #000000;
+                    font-weight: bold;
+                    background-color: #d3d3d3b2;">
+                    <i class="fa fa-envelope"></i>
+                    <h3 class="box-title" style="">ارسال کد به ایمیل دامنه</h3>
+                </div>
+                <div class="box-body">
+
+                    <p class="pf"><i class="fa fa-info-circle bi-c1"></i>
+                        چنانچه بر روی دکمه <span style="font-weight: bold;">"ارسال ایمیل"</span> در ذیل این بخش کلیک
+                        نمایید، یک ایمیل حاوی یک کد به آدرس
+                        <span style="color: #3366ff;"><strong>info@ahoorateknik.com</strong></span>
+                            
+                        ارسال می شود. جهت تکمیل این بخش کافی است کد مربوطه را در کادر ذیل وارد نموده و بر روی دکمه
+                        <span style="font-weight: bold;">"تایید
+                            کد"</span> کلیک نمایید.
+                    </p>
+                    <div class="col-12">
+                        <ol class="breadcrumb2" id="ver-des" style="display: none">
+                            <p class="pf" style="margin: 0 0 1px;">
+                                <i class="fa fa-check-circle-o" style="color: #00cc00;
+                                   font-size: 16px;"></i> کاربر گرامی، ایمیل حاوی کد تایید به ایمیل شما ارسال شد آن را
+                                در کادر زیر وارد کرده سپس دکمه ثبت را بزنید، در صورت موفقیت آمیز بودن احراز، دکمه مرحله
+                                بعد
+                                را بزنید.</p>
+                        </ol>
+                    </div>
+                    <div id="vb-1" class="col-12 pull-right" style="margin: 1rem 0;">
+                    </div>
+                    <div class="pull-right">
+                        <button type="button" id="send_email" onclick="sendEmail(&#39;1&#39;)" class="btn bfc1 btn-sm" style="display: block;">ارسال
+                            کد
+                            به
+                            ایمیل
+                        </button>
+                    </div>
+                    <br>
+                    <div id="vs-1" class="row div-verificationCode-1" style="display: none; padding: 10px 10px 0px 5px;">
+                        <div class="col-md-8 col-sm-12">
+                            <label>کد ارسالی به ایمیل:</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="code" id="code" style="height: auto" placeholder="کد را وارد کنید">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 div-bt">
+                            <div class="pull-left">
+                                <button type="button" onclick="verificationEmailCode(&#39;1&#39;)" class="btn btn-info btn-sm" style="height: 34px;">ثبت کدارسالی به ایمیل
+                                </button>
+                            </div>
+                            <div class="pull-left">
+                                <button id="div-time" type="button" onclick="verificationEmailCode(&#39;1&#39;)" class="btn btn-info btn-sm" style="height: 34px; display: none; box-shadow: rgba(29, 113, 232, 0.2) 1px 4px 4px; background-color: rgb(255, 255, 255); border: 1px inset rgba(29, 113, 232, 0.37); color: rgb(17, 17, 17); font-weight: bold; margin-left: 5px;"><span id="time">04:39</span>
+                                </button>
+                            </div>
+                            <div class="pull-left">
+                                <button style="display: none;
+                                        margin-left:5px;
+                                        height: 34px;" type="button" id="resend_email" onclick="sendEmail(&#39;1&#39;)" class="btn bfc2 btn-sm">
+                                    ارسال
+                                    مجدد
+                                    ایمیل
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-body">
+                <div class="col-md-12">
+                    <button style="display: none; margin-left: -15px; margin-top: -20px;" type="button" id="another-choice" onclick="showAllChoice()" class="btn bfc2 btn-sm pull-left">
+                        انتخاب سایر گزینه های احراز دسترسی فنی
+                    </button>
+                </div>
+            </div>
+            <div class="box box-default" id="div-verification-2" style="display: block; box-shadow: rgb(232, 187, 147) 0px 1px 1px;">
+                <div class="box-header" style="color: #000000;
+                    font-weight: bold;
+                    background-color: #d3d3d3b2;">
+                    <i class="fa fa-upload"></i>
+                    <h3 class="box-title" style="">بارگذاری فایل در سرور</h3>
+                </div>
+                <div class="box-body">
+                    <p class="pf"><i class="fa fa-info-circle bi-c1"></i>
+                        جهت تکمیل این مرحله یک فایل خالی و با نام
+                        <bdi style="color: #ff6633;"><u><strong>21894151.txt</strong></u></bdi>
+                            
+                        در ریشه وب سایت قرار دهید به نحوی که از
+                        طریق آدرس
+                        &nbsp;<span style="color: #3366ff;"><strong>ahoorateknik.com/21894151.txt</strong> </span>&nbsp;
+                        قابل دسترس باشد. بعد از بارگذاری فایل بر روی دکمه <span style="font-weight: bold;">"تایید بارگذاری"</span>کلیک
+                        نمایید تا صحت این مرحله بررسی
+                        گردد.
+                    </p>
+                    <p class="col-12 pull-right" id="vb-2">
+
+                    </p>
+                    <div>
+                        <button id="vs-2" type="button" onclick="verificationTechnicalAccess(&#39;2&#39;)" class="btn bfc1 btn-sm">
+                            تایید
+                            بارگذاری
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-default" id="div-verification-3" style="display: block; box-shadow: rgb(232, 187, 147) 0px 1px 1px;">
+                <div class="box-header" style="color: #000000;
+                    font-weight: bold;
+                    background-color: #d3d3d3b2;">
+                    <i class="fa fa-file-text-o"></i>
+                    <h3 class="box-title" style="">تغییر عنوان صفحه</h3>
+                </div>
+                <div class="box-body">
+                    <p class="pf"><i class="fa fa-info-circle bi-c1"></i>
+                        کافی است جهت انجام این تاییدیه عبارت <u style="color: #3366ff"> <strong>21894151</strong> </u>را
+                        به صورت موقت در عنوان
+                        صفحه بر روی دامنه <strong style="color: #3366ff;
+                        font-size: 15px"> ahoorateknik.com </strong>
+                        قراردهید و سپس
+                        بر
+                        روی دکمه<span style="font-weight: bold;">"تایید عنوان"</span> کلیک کنید. بعد از انجام تایید می
+                        توانید عنوان را به حالت قبل بازگردانید.
+                    </p>
+                    <p class="col-12 pull-right" id="vb-3">
+                    </p>
+                    <div>
+                        <button id="vs-3" type="button" onclick="verificationTechnicalAccess(&#39;3&#39;)" class="btn bfc1 btn-sm">
+                            تایید
+                            عنوان
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-default" id="div-verification-4" style="display: block; box-shadow: rgb(232, 187, 147) 0px 1px 1px;">
+                <div class="box-header" style="color: #000000;
+                    font-weight: bold;
+                    background-color: #d3d3d3b2;">
+                    <i class="fa fa-file-code-o"></i>
+                    <h3 class="box-title" style="">افزودن متاتگ در صفحه اصلی</h3>
+                </div>
+                <div class="box-body">
+                    <p class="pf"><i class="fa fa-info-circle bi-c1"></i>
+                        جهت تکمیل این مرحله کافی است در صفحه اصلی سایت که در آدرس
+                        <bdi style="color: #3366ff"><u><strong>ahoorateknik.com</strong></u></bdi>
+                        قرار دارد ،در هدر اصلی متاتگ ذیل افزوده شود
+                        <bdi style="color: #3366ff"><u onclick="getMeta()"><strong style="cursor: pointer">&lt;meta
+                            name="enamad"
+                            content="21894151"
+                            /&gt;</strong></u></bdi>
+                        سپس جهت بررسی، بر روی دکمه <span style="font-weight: bold;">"تایید متاتگ"</span> کلیک نمایید.
+                    </p>
+                    <p class="col-12 pull-right" id="vb-4">
+                    </p>
+                    <div>
+                        <button id="vs-4" type="button" onclick="verificationTechnicalAccess(&#39;4&#39;)" class="btn bfc1 btn-sm">
+                            تایید
+                            متاتگ
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer" id="amin">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="pull-right">
+                            <button type="button" class="btn bc14 btn-sm" onclick="prevFunc()">مرحله قبل</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="pull-left">
+                            <button type="button" class="btn bfc1 btn-sm" onclick="checkVerify()">مرحله بعد</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>showTimeLine(3);</script>
+        <script>
+            var countSendEmail = 0;
+            var countERV = 0;
+        </script>
+        <script>
+
+            function sendEmail(index) {
+                if (!checkCountRequest(countSendEmail, '1')) {
+                    return;
+                }
+                loaderOn();
+                $.ajax({
+                    type: "POST",
+                    url: "/sendVerifyEmailCodeNoReply",
+                    data: {
+                        token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiVDZhdXNUMHhuOHlnZW1mbTdmTGQxUHJjeEQ3NTJwRE0yYTdKUmtqRGJVVitoamdXbzBJcFZvVHlVeFczMlFtVVZSM3hpZnBwYU9uT2xDc1VSaXF3WXVFOXp4VGFYUUcwMWkyYlhpMUdkTDBUbTlQQWhLZ0FGNDNLSzdRTmNuKzBDTWdCd2RnY3E2bDEyQWlFY0RBYnBlK216ZXV3ekZ3a0VhYk1QOHBLaUxEQzBJSnR2MnMvYVJyekthaHlmTWh2WXNJclRTVFZsdnB5aHB1aldlemd5TWVDZW9Ib0E3NDZaRVllcWhOa21CajdYUHpMRXcrc1ZCM1BCdFJ2R3hkVnlJc2ZVWVZQTEVLc1F5dHhReEFIcmFBd21pdlMyTlExditZNS94WjhvQWViVCt0MytSMTRDd1JuSzhrb05UbjUwQkxLeXpyYVhnOFUyc29ObXpteUF6ZGhtSEc0WTkrNVhBQlUrQ0Y1SXhiQ0l3bzN5aklVVVJWbHpIRWtxQ1BRK0RWM0EvZWlsaDNWa3NtaGJJMzA5VmxHQ3RNdGNScWxmL0w0UzFZMUtLSWkyWC90OWkyTDhySWRIcVFMU0RCaURyKzBMZjBuYmp4SWNOUFcwOGhKbWVjSmlybTBzcEczQlVEd0pZOEw1emhJdTJKaitMWlV2UzhXT2tGUTVsN3pIckZTcUxnTmg0OUlJLzIxcEJSdWpwRXJBelNrRG9DeVB4SHp0RFMwaHNoaldRMlhSQnY0dnQ4VHBQYVF4bW5GZGxoOUtwemE5ZFd1MHNjN3l2RkkvcFNaZWhpaTFzUmpoM2RtY0tXQ2ZEYmd4MWZCejlORnBMU1ZBTUhyNkZyVkJ0UGF1eDBsMkxXVmt1ZHBIR1FrdDdQSmJMd2JRUDVaNHdoTzRTQXBFdGNoRUJwUC92dnVkbUxjQnRTbnN4a1dKcEJoaFg3enU5OThHRGgwZ05yUFhHaGN6ZUI0TmdFeFJQMHFWSVgzZ05JRytwSEdHckZUVUJKUFBGOFZJeU0wMHQ5TTFITXNlM094Uk5OSVNONEh0cXpZWXVobmk4Wk16eEZ2akpJNUFleW0wWkcrbDVrUVRPNGZwazJGL09YdTl5MWlxdWFOSWdyMkY3amlheEtINWdPMDQ2cEJpR1MrcG5kQ1FGWEVEcVN6b3RURld4SzRsY2hMQmxLekFYblZZR054SElOazRDSG9tVW1HS04wRjlaUFljZkIxU0laOTVsbkxVMXpzWW5jV3VzcytQbS9pYkIxODltQnh5UTUzc1h0MVRmV0hqSXNETUQzbkNqbU9wb2tiQytvbkpDWFlQWU9YdWtTRDl0UkdoTTJKelZUL1VjbE9vUDJHYStyYkh6cUdwNVpqNUd6dHBXR284WEVlUS9JV3NMQUtBYmtlOC9IdDQ3b2pSamxld2NGa3ZKcDBEc0JWOENWZkplRlkiLCJpc3MiOiJ0c2luY28uaXIiLCJleHAiOjE3OTI3NTkyMzB9.Q1BWcCH1lv5AIUHaONSiOU-rhDmtJsMpGLW2KR3nrAQ#MUkpUyQfeXfadco-ONh3sp1BeGVKkoHb',
+                        dId: 'FYiLu4awBh1sA+qpQgRuVQ==',
+                        daaa: '1OPIDSCUX0C9/fJzu9bflMirtmdpkAMTaLkTajlwy4E='
+                    },
+                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                    success: function (d) {
+                        if (d.code == '2') {
+                            changeDisplay(index);
+                            toast(d.message, d.color, 3.5);
+                        } else {
+                            toast(d.message, d.color, 3.5)
+                        }
+                        countSendEmail = d.count
+                        loaderOff();
+                    },
+                    error: function (e) {
+                        toast("عملیات با خطا مواجه شد.", "red", 5);
+                        loaderOff();
+                    }
+                })
+            }
+
+        </script>
+        <script>
+            function verificationEmailCode(index) {
+                if (!checkCountRequest(countERV, '2')) {
+                    return;
+                }
+                loaderOn();
+                let code = document.getElementById('code').value;
+                if (code == '') {
+                    toast("کاربر گرامی، لطفا برای احراز ایمیل، کد ارسالی را در کادر مربوطه وارد کنید.", "red", 5);
+                    loaderOff();
+                    return;
+                }
+                $.ajax({
+                    type: "POST",
+                    url: "/verifyEmailCode",
+                    data: {
+                        token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiVDZhdXNUMHhuOHlnZW1mbTdmTGQxUHJjeEQ3NTJwRE0yYTdKUmtqRGJVVitoamdXbzBJcFZvVHlVeFczMlFtVVZSM3hpZnBwYU9uT2xDc1VSaXF3WXVFOXp4VGFYUUcwMWkyYlhpMUdkTDBUbTlQQWhLZ0FGNDNLSzdRTmNuKzBDTWdCd2RnY3E2bDEyQWlFY0RBYnBlK216ZXV3ekZ3a0VhYk1QOHBLaUxEQzBJSnR2MnMvYVJyekthaHlmTWh2WXNJclRTVFZsdnB5aHB1aldlemd5TWVDZW9Ib0E3NDZaRVllcWhOa21CajdYUHpMRXcrc1ZCM1BCdFJ2R3hkVnlJc2ZVWVZQTEVLc1F5dHhReEFIcmFBd21pdlMyTlExditZNS94WjhvQWViVCt0MytSMTRDd1JuSzhrb05UbjUwQkxLeXpyYVhnOFUyc29ObXpteUF6ZGhtSEc0WTkrNVhBQlUrQ0Y1SXhiQ0l3bzN5aklVVVJWbHpIRWtxQ1BRK0RWM0EvZWlsaDNWa3NtaGJJMzA5VmxHQ3RNdGNScWxmL0w0UzFZMUtLSWkyWC90OWkyTDhySWRIcVFMU0RCaURyKzBMZjBuYmp4SWNOUFcwOGhKbWVjSmlybTBzcEczQlVEd0pZOEw1emhJdTJKaitMWlV2UzhXT2tGUTVsN3pIckZTcUxnTmg0OUlJLzIxcEJSdWpwRXJBelNrRG9DeVB4SHp0RFMwaHNoaldRMlhSQnY0dnQ4VHBQYVF4bW5GZGxoOUtwemE5ZFd1MHNjN3l2RkkvcFNaZWhpaTFzUmpoM2RtY0tXQ2ZEYmd4MWZCejlORnBMU1ZBTUhyNkZyVkJ0UGF1eDBsMkxXVmt1ZHBIR1FrdDdQSmJMd2JRUDVaNHdoTzRTQXBFdGNoRUJwUC92dnVkbUxjQnRTbnN4a1dKcEJoaFg3enU5OThHRGgwZ05yUFhHaGN6ZUI0TmdFeFJQMHFWSVgzZ05JRytwSEdHckZUVUJKUFBGOFZJeU0wMHQ5TTFITXNlM094Uk5OSVNONEh0cXpZWXVobmk4Wk16eEZ2akpJNUFleW0wWkcrbDVrUVRPNGZwazJGL09YdTl5MWlxdWFOSWdyMkY3amlheEtINWdPMDQ2cEJpR1MrcG5kQ1FGWEVEcVN6b3RURld4SzRsY2hMQmxLekFYblZZR054SElOazRDSG9tVW1HS04wRjlaUFljZkIxU0laOTVsbkxVMXpzWW5jV3VzcytQbS9pYkIxODltQnh5UTUzc1h0MVRmV0hqSXNETUQzbkNqbU9wb2tiQytvbkpDWFlQWU9YdWtTRDl0UkdoTTJKelZUL1VjbE9vUDJHYStyYkh6cUdwNVpqNUd6dHBXR284WEVlUS9JV3NMQUtBYmtlOC9IdDQ3b2pSamxld2NGa3ZKcDBEc0JWOENWZkplRlkiLCJpc3MiOiJ0c2luY28uaXIiLCJleHAiOjE3OTI3NTkyMzB9.Q1BWcCH1lv5AIUHaONSiOU-rhDmtJsMpGLW2KR3nrAQ#MUkpUyQfeXfadco-ONh3sp1BeGVKkoHb',
+                        code: code,
+                        dId: 'FYiLu4awBh1sA+qpQgRuVQ==',
+                        rId: 'Ehdee83P296Lr9MXXUdF3g==',
+                        daaa: '1OPIDSCUX0C9/fJzu9bflMirtmdpkAMTaLkTajlwy4E='
+                    },
+                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                    success: function (d) {
+                        if (d.code == '6') {
+                            loaderOff();
+                            toast(d.message, d.color, 4.5)
+                            let verfyShow = 'vs-' + index;
+                            clearInterval(s);
+                            document.getElementById('div-time').style.display = 'none';
+                            document.getElementById(verfyShow).style.display = 'none';
+                            document.getElementById('ver-des').style.display = 'none';
+                            document.getElementById('another-choice').style.display = 'none';
+                            verificationBreadCrumb(index);
+                            setTimeout(function () {
+                                checkVerify();
+                            }, 5000);
+                        } else {
+                            loaderOff();
+                            toast(d.message, d.color, 4.5)
+                        }
+                        countERV = d.count
+                    },
+                    error: function (e) {
+                        loaderOff();
+                        toast("عملیات با خطا مواجه شد.", "red", 5);
+                    }
+                })
+            }
+
+        </script>
+        <script>
+            
+
+            function verificationTechnicalAccess(index) {
+                let url;
+                if (index == '2') {
+                    url = '/getFileFromURL';
+                } else if (index == '3') {
+                    url = '/getTitle';
+                } else if (index == '4') {
+                    url = '/getMetaTag';
+                }
+                loaderOn();
+                changeDisplay(index);
+
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: {
+                        token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiVDZhdXNUMHhuOHlnZW1mbTdmTGQxUHJjeEQ3NTJwRE0yYTdKUmtqRGJVVitoamdXbzBJcFZvVHlVeFczMlFtVVZSM3hpZnBwYU9uT2xDc1VSaXF3WXVFOXp4VGFYUUcwMWkyYlhpMUdkTDBUbTlQQWhLZ0FGNDNLSzdRTmNuKzBDTWdCd2RnY3E2bDEyQWlFY0RBYnBlK216ZXV3ekZ3a0VhYk1QOHBLaUxEQzBJSnR2MnMvYVJyekthaHlmTWh2WXNJclRTVFZsdnB5aHB1aldlemd5TWVDZW9Ib0E3NDZaRVllcWhOa21CajdYUHpMRXcrc1ZCM1BCdFJ2R3hkVnlJc2ZVWVZQTEVLc1F5dHhReEFIcmFBd21pdlMyTlExditZNS94WjhvQWViVCt0MytSMTRDd1JuSzhrb05UbjUwQkxLeXpyYVhnOFUyc29ObXpteUF6ZGhtSEc0WTkrNVhBQlUrQ0Y1SXhiQ0l3bzN5aklVVVJWbHpIRWtxQ1BRK0RWM0EvZWlsaDNWa3NtaGJJMzA5VmxHQ3RNdGNScWxmL0w0UzFZMUtLSWkyWC90OWkyTDhySWRIcVFMU0RCaURyKzBMZjBuYmp4SWNOUFcwOGhKbWVjSmlybTBzcEczQlVEd0pZOEw1emhJdTJKaitMWlV2UzhXT2tGUTVsN3pIckZTcUxnTmg0OUlJLzIxcEJSdWpwRXJBelNrRG9DeVB4SHp0RFMwaHNoaldRMlhSQnY0dnQ4VHBQYVF4bW5GZGxoOUtwemE5ZFd1MHNjN3l2RkkvcFNaZWhpaTFzUmpoM2RtY0tXQ2ZEYmd4MWZCejlORnBMU1ZBTUhyNkZyVkJ0UGF1eDBsMkxXVmt1ZHBIR1FrdDdQSmJMd2JRUDVaNHdoTzRTQXBFdGNoRUJwUC92dnVkbUxjQnRTbnN4a1dKcEJoaFg3enU5OThHRGgwZ05yUFhHaGN6ZUI0TmdFeFJQMHFWSVgzZ05JRytwSEdHckZUVUJKUFBGOFZJeU0wMHQ5TTFITXNlM094Uk5OSVNONEh0cXpZWXVobmk4Wk16eEZ2akpJNUFleW0wWkcrbDVrUVRPNGZwazJGL09YdTl5MWlxdWFOSWdyMkY3amlheEtINWdPMDQ2cEJpR1MrcG5kQ1FGWEVEcVN6b3RURld4SzRsY2hMQmxLekFYblZZR054SElOazRDSG9tVW1HS04wRjlaUFljZkIxU0laOTVsbkxVMXpzWW5jV3VzcytQbS9pYkIxODltQnh5UTUzc1h0MVRmV0hqSXNETUQzbkNqbU9wb2tiQytvbkpDWFlQWU9YdWtTRDl0UkdoTTJKelZUL1VjbE9vUDJHYStyYkh6cUdwNVpqNUd6dHBXR284WEVlUS9JV3NMQUtBYmtlOC9IdDQ3b2pSamxld2NGa3ZKcDBEc0JWOENWZkplRlkiLCJpc3MiOiJ0c2luY28uaXIiLCJleHAiOjE3OTI3NTkyMzB9.Q1BWcCH1lv5AIUHaONSiOU-rhDmtJsMpGLW2KR3nrAQ#MUkpUyQfeXfadco-ONh3sp1BeGVKkoHb',
+                        dId: 'FYiLu4awBh1sA+qpQgRuVQ==',
+                        rId: 'Ehdee83P296Lr9MXXUdF3g==',
+                        daaa: '1OPIDSCUX0C9/fJzu9bflMirtmdpkAMTaLkTajlwy4E='
+                    },
+                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                    success: function (d) {
+                        if (d.code == '6') {
+                            let verifyShow = 'vs-' + index;
+                            document.getElementById(verifyShow).style.display = 'none';
+                            verificationBreadCrumb(index);
+                            toast(d.message, d.color, 4.5)
+                            setTimeout(function () {
+                                checkVerify();
+                            }, 5000);
+
+                        } else {
+                            toast(d.message, d.color, 4.5)
+                            for (let i = 1; i <= 4; i++) {
+                                let id = 'div-verification-' + i;
+                                document.getElementById(id).style.display = 'block';
+                            }
+                        }
+                        loaderOff();
+                    },
+                    error: function (e) {
+                        loaderOff();
+                        toast("عملیات با خطا مواجه شد.", "red", 5);
+                    }
+                });
+            }
+
+        </script>
+        <script>
+            function showAllChoice() {
+                setTimeout(function () {
+                    let divClass = '.div-verificationCode-1';
+                    clearInterval(s);
+                    document.getElementById('div-time').style.display = 'none';
+                    document.querySelectorAll(divClass).forEach(a => a.style.display = "none");
+                    document.getElementById('another-choice').style.display = 'none';
+                    document.getElementById("send_email").style.display = 'block';
+                    document.getElementById("resend_email").style.display = 'none';
+
+                    for (let i = 1; i <= 4; i++) {
+                        let id = 'div-verification-' + i;
+                        document.getElementById(id).style.display = 'block';
+                    }
+                }, 1000)
+
+            }
+        </script>
+        <script>
+            function changeDisplay(index) {
+                if (index == '1') {
+                    let divClass = '.div-verificationCode-' + index;
+                    document.querySelectorAll(divClass).forEach(a => a.style.display = "block");
+                    document.getElementById('another-choice').style.display = 'block';
+                    document.getElementById('send_email').style.display = 'none';
+                    document.getElementById('resend_email').style.display = 'none';
+                    clearInterval(s);
+                    timer();
+                }
+                for (let i = 1; i <= 4; i++) {
+                    if (index != i) {
+                        let id = 'div-verification-' + i;
+                        document.getElementById(id).style.display = 'none';
+                    }
+                }
+            }
+        </script>
+        <script>
+            function timer() {
+                var fiveMinutes = 300;
+                display = document.querySelector('#time');
+                startTimer(fiveMinutes, display);
+                setTimeout(function () {
+                    document.getElementById('div-time').style.display = 'block';
+                }, 1000)
+            }
+
+        </script>
+        <script>
+
+            var s;
+
+            function startTimer(duration, display) {
+                var timer = duration, minutes, seconds;
+                s = setInterval(function () {
+                    minutes = parseInt(timer / 60, 10);
+                    seconds = parseInt(timer % 60, 10);
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+                    display.textContent = minutes + ":" + seconds;
+                    if (--timer < 0) {
+                        document.getElementById("resend_email").style.display = 'block';
+                        document.getElementById("ver-des").style.display = 'none';
+                        toast("اگر کد را دریافت نکردید؛ بر روی دکمه ( ارسال مجدد ایمیل ) کلیک کنید.", '#077dc5', 4.5);
+                        clearInterval(s);
+                        document.getElementById("time").innerHTML = "";
+                        document.getElementById('div-time').style.display = 'none';
+                    }
+                }, 1000);
+            }
+        </script>
+
+
+
+        <script>
+
+            function getMeta() {
+                loaderOn()
+                $.ajax({
+                    type: "POST",
+                    url: "/getMeta",
+                    data: {
+                        token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiVDZhdXNUMHhuOHlnZW1mbTdmTGQxUHJjeEQ3NTJwRE0yYTdKUmtqRGJVVitoamdXbzBJcFZvVHlVeFczMlFtVVZSM3hpZnBwYU9uT2xDc1VSaXF3WXVFOXp4VGFYUUcwMWkyYlhpMUdkTDBUbTlQQWhLZ0FGNDNLSzdRTmNuKzBDTWdCd2RnY3E2bDEyQWlFY0RBYnBlK216ZXV3ekZ3a0VhYk1QOHBLaUxEQzBJSnR2MnMvYVJyekthaHlmTWh2WXNJclRTVFZsdnB5aHB1aldlemd5TWVDZW9Ib0E3NDZaRVllcWhOa21CajdYUHpMRXcrc1ZCM1BCdFJ2R3hkVnlJc2ZVWVZQTEVLc1F5dHhReEFIcmFBd21pdlMyTlExditZNS94WjhvQWViVCt0MytSMTRDd1JuSzhrb05UbjUwQkxLeXpyYVhnOFUyc29ObXpteUF6ZGhtSEc0WTkrNVhBQlUrQ0Y1SXhiQ0l3bzN5aklVVVJWbHpIRWtxQ1BRK0RWM0EvZWlsaDNWa3NtaGJJMzA5VmxHQ3RNdGNScWxmL0w0UzFZMUtLSWkyWC90OWkyTDhySWRIcVFMU0RCaURyKzBMZjBuYmp4SWNOUFcwOGhKbWVjSmlybTBzcEczQlVEd0pZOEw1emhJdTJKaitMWlV2UzhXT2tGUTVsN3pIckZTcUxnTmg0OUlJLzIxcEJSdWpwRXJBelNrRG9DeVB4SHp0RFMwaHNoaldRMlhSQnY0dnQ4VHBQYVF4bW5GZGxoOUtwemE5ZFd1MHNjN3l2RkkvcFNaZWhpaTFzUmpoM2RtY0tXQ2ZEYmd4MWZCejlORnBMU1ZBTUhyNkZyVkJ0UGF1eDBsMkxXVmt1ZHBIR1FrdDdQSmJMd2JRUDVaNHdoTzRTQXBFdGNoRUJwUC92dnVkbUxjQnRTbnN4a1dKcEJoaFg3enU5OThHRGgwZ05yUFhHaGN6ZUI0TmdFeFJQMHFWSVgzZ05JRytwSEdHckZUVUJKUFBGOFZJeU0wMHQ5TTFITXNlM094Uk5OSVNONEh0cXpZWXVobmk4Wk16eEZ2akpJNUFleW0wWkcrbDVrUVRPNGZwazJGL09YdTl5MWlxdWFOSWdyMkY3amlheEtINWdPMDQ2cEJpR1MrcG5kQ1FGWEVEcVN6b3RURld4SzRsY2hMQmxLekFYblZZR054SElOazRDSG9tVW1HS04wRjlaUFljZkIxU0laOTVsbkxVMXpzWW5jV3VzcytQbS9pYkIxODltQnh5UTUzc1h0MVRmV0hqSXNETUQzbkNqbU9wb2tiQytvbkpDWFlQWU9YdWtTRDl0UkdoTTJKelZUL1VjbE9vUDJHYStyYkh6cUdwNVpqNUd6dHBXR284WEVlUS9JV3NMQUtBYmtlOC9IdDQ3b2pSamxld2NGa3ZKcDBEc0JWOENWZkplRlkiLCJpc3MiOiJ0c2luY28uaXIiLCJleHAiOjE3OTI3NTkyMzB9.Q1BWcCH1lv5AIUHaONSiOU-rhDmtJsMpGLW2KR3nrAQ#MUkpUyQfeXfadco-ONh3sp1BeGVKkoHb',
+                        daaa: '1OPIDSCUX0C9/fJzu9bflMirtmdpkAMTaLkTajlwy4E='
+                    },
+                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                    success: function (d) {
+                        loaderOff();
+                    },
+                    error: function (e) {
+                        loaderOff();
+                    }
+                })
+            }
+        </script>
+
+        <script>
+            function verificationBreadCrumb(index) {
+                let ihtml = '<span class="bg-success div-verificationCode-1" style="padding: .5rem 1rem; border-radius: 4px; line-height: 30px">' +
+                    '<i class="fa fa-check" style="color: green"></i>' +
+                    ' عملیات احراز با موفقیت انجام شد، پس از چند ثانیه به صفحه بعد هدایت می شوید یا میتوانید دکمه "مرحله بعد" را کلیک کنید </span>';
+                document.getElementById("vb-" + index).innerHTML = ihtml;
+            }
+        </script>
+
+    
+    <script>
+        function checkVerify() {
+            $.ajax({
+                type: "POST",
+                url: "/checkVerify",
+                data: {
+                    token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiVDZhdXNUMHhuOHlnZW1mbTdmTGQxUHJjeEQ3NTJwRE0yYTdKUmtqRGJVVitoamdXbzBJcFZvVHlVeFczMlFtVVZSM3hpZnBwYU9uT2xDc1VSaXF3WXVFOXp4VGFYUUcwMWkyYlhpMUdkTDBUbTlQQWhLZ0FGNDNLSzdRTmNuKzBDTWdCd2RnY3E2bDEyQWlFY0RBYnBlK216ZXV3ekZ3a0VhYk1QOHBLaUxEQzBJSnR2MnMvYVJyekthaHlmTWh2WXNJclRTVFZsdnB5aHB1aldlemd5TWVDZW9Ib0E3NDZaRVllcWhOa21CajdYUHpMRXcrc1ZCM1BCdFJ2R3hkVnlJc2ZVWVZQTEVLc1F5dHhReEFIcmFBd21pdlMyTlExditZNS94WjhvQWViVCt0MytSMTRDd1JuSzhrb05UbjUwQkxLeXpyYVhnOFUyc29ObXpteUF6ZGhtSEc0WTkrNVhBQlUrQ0Y1SXhiQ0l3bzN5aklVVVJWbHpIRWtxQ1BRK0RWM0EvZWlsaDNWa3NtaGJJMzA5VmxHQ3RNdGNScWxmL0w0UzFZMUtLSWkyWC90OWkyTDhySWRIcVFMU0RCaURyKzBMZjBuYmp4SWNOUFcwOGhKbWVjSmlybTBzcEczQlVEd0pZOEw1emhJdTJKaitMWlV2UzhXT2tGUTVsN3pIckZTcUxnTmg0OUlJLzIxcEJSdWpwRXJBelNrRG9DeVB4SHp0RFMwaHNoaldRMlhSQnY0dnQ4VHBQYVF4bW5GZGxoOUtwemE5ZFd1MHNjN3l2RkkvcFNaZWhpaTFzUmpoM2RtY0tXQ2ZEYmd4MWZCejlORnBMU1ZBTUhyNkZyVkJ0UGF1eDBsMkxXVmt1ZHBIR1FrdDdQSmJMd2JRUDVaNHdoTzRTQXBFdGNoRUJwUC92dnVkbUxjQnRTbnN4a1dKcEJoaFg3enU5OThHRGgwZ05yUFhHaGN6ZUI0TmdFeFJQMHFWSVgzZ05JRytwSEdHckZUVUJKUFBGOFZJeU0wMHQ5TTFITXNlM094Uk5OSVNONEh0cXpZWXVobmk4Wk16eEZ2akpJNUFleW0wWkcrbDVrUVRPNGZwazJGL09YdTl5MWlxdWFOSWdyMkY3amlheEtINWdPMDQ2cEJpR1MrcG5kQ1FGWEVEcVN6b3RURld4SzRsY2hMQmxLekFYblZZR054SElOazRDSG9tVW1HS04wRjlaUFljZkIxU0laOTVsbkxVMXpzWW5jV3VzcytQbS9pYkIxODltQnh5UTUzc1h0MVRmV0hqSXNETUQzbkNqbU9wb2tiQytvbkpDWFlQWU9YdWtTRDl0UkdoTTJKelZUL1VjbE9vUDJHYStyYkh6cUdwNVpqNUd6dHBXR284WEVlUS9JV3NMQUtBYmtlOC9IdDQ3b2pSamxld2NGa3ZKcDBEc0JWOENWZkplRlkiLCJpc3MiOiJ0c2luY28uaXIiLCJleHAiOjE3OTI3NTkyMzB9.Q1BWcCH1lv5AIUHaONSiOU-rhDmtJsMpGLW2KR3nrAQ#MUkpUyQfeXfadco-ONh3sp1BeGVKkoHb',
+                    dId: 'FYiLu4awBh1sA+qpQgRuVQ=='
+                },
+                contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                success: function (d) {
+                    if (d.code == '1') {
+                        setTimeout(function () {
+                            nextFunc();
+                        }, 210);
+                    } else if (d.code == '8') {
+                        toast(d.message, d.color, 3.5)
+                    }
+                },
+                error: function (e) {
+                    loaderOff();
+                    toast("عملیات با خطا مواجه شد.", "red", 5);
+                }
+            })
+        }
+    </script>
+    <script>
+        function prevFunc() {
+            loaderOn();
+            document.getElementById("frmHandller").action = '/BusinessInformation/BusinessInformation';
+            document.getElementById("frmHandller").submit();
+        }
+    </script>
+    <script>
+        function nextFunc() {
+            document.getElementById("frmHandller").action = '/LegalityOfBusiness/LegalityOfBusiness';
+            document.getElementById("frmHandller").submit();
+        }
+    </script>
+
+
+        </section>
+    </div>
+    <div id="modal-container"></div>
+</div>
+<div class="modal" id="notifyModal" style="display: none;">
+    <div class="modal-dialog" style="max-width: 700px;margin: auto">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById(&#39;notifyModal&#39;).style.display = &#39;none&#39;">
+                    <span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">اطلاعیه مهم</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    <ol class="breadcrumb2" style="background-color: #c5eeef">
+                        <p class="pf">
+                            در راستای افزایش کیفیت خدمات و حمایت از نقش‌آفرینی بخش غیردولتی، مرکز توسعه تجارت الکترونیکی
+                            اقدام به استفاده از ظرفیت شرکت‌های توانمند، نوآور و دارای صلاحیت به‌عنوان «کارگزار رتبه‌بندی
+                            واحدهای تجارت الکترونیکی دارای اینماد» نموده است.
+                            لذا با توجه به فرآیند جدید، در حال حاضر رتبه‌بندی صرفا برای آن دسته از واحدهایی صورت
+                            می‌پذیرد که تا تاریخ سوم مردادماه 1403 اقدام به ثبت درخواست نموده‌اند. فرآیند رتبه‌بندی برای
+                            واحدهای متقاضی پس از تاریخ مذکور، از 24 مهرماه 1403 ادامه خواهد یافت. به منظور آگاهی از
+                            جدیدترین اخبار و اطلاعات در خصوص فرآیند رتبه‌بندی واحدهای تجارت الکترونیکی دارای اینماد،
+                            می‌توانید در روز های آتی به آدرس
+                            <a href="http://rating.ecommerce.gov.ir/" target="_blank">
+                                <span style="color: rgba(0,46,194,0.84);font-weight: bold"> rating.ecommerce.gov.ir</span>
+                            </a>
+                            مراجعه فرمائید.
+                        </p>
+                    </ol>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btc9 btn-sm pull-left" style="margin-top: 20px;" onclick="document.getElementById(&#39;notifyModal&#39;).style.display =&#39;none&#39;">متوجه شدم
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function closeModal(id) {
+        $('#' + id).modal('toggle');
+    }
+
+    function loaderOn() {
+        document.getElementById('boxLoader').style.display = 'block';
+    }
+
+    function loaderOff() {
+        document.getElementById('boxLoader').style.display = 'none';
+    }
+
+    try {
+        loaderOff();
+    } catch (e) {
+    }
+
+    function logout(type) {
+        if (!confirm("آیا مطمئن هستید که می خواهید خارج شوید ؟")) {
+            return false;
+        } else {
+            $.ajax({
+                type: "POST",
+                url: "/logOut",
+                data: {
+                    "type": type,
+                    "token": 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiVDZhdXNUMHhuOHlnZW1mbTdmTGQxUHJjeEQ3NTJwRE0yYTdKUmtqRGJVVitoamdXbzBJcFZvVHlVeFczMlFtVVZSM3hpZnBwYU9uT2xDc1VSaXF3WXVFOXp4VGFYUUcwMWkyYlhpMUdkTDBUbTlQQWhLZ0FGNDNLSzdRTmNuKzBDTWdCd2RnY3E2bDEyQWlFY0RBYnBlK216ZXV3ekZ3a0VhYk1QOHBLaUxEQzBJSnR2MnMvYVJyekthaHlmTWh2WXNJclRTVFZsdnB5aHB1aldlemd5TWVDZW9Ib0E3NDZaRVllcWhOa21CajdYUHpMRXcrc1ZCM1BCdFJ2R3hkVnlJc2ZVWVZQTEVLc1F5dHhReEFIcmFBd21pdlMyTlExditZNS94WjhvQWViVCt0MytSMTRDd1JuSzhrb05UbjUwQkxLeXpyYVhnOFUyc29ObXpteUF6ZGhtSEc0WTkrNVhBQlUrQ0Y1SXhiQ0l3bzN5aklVVVJWbHpIRWtxQ1BRK0RWM0EvZWlsaDNWa3NtaGJJMzA5VmxHQ3RNdGNScWxmL0w0UzFZMUtLSWkyWC90OWkyTDhySWRIcVFMU0RCaURyKzBMZjBuYmp4SWNOUFcwOGhKbWVjSmlybTBzcEczQlVEd0pZOEw1emhJdTJKaitMWlV2UzhXT2tGUTVsN3pIckZTcUxnTmg0OUlJLzIxcEJSdWpwRXJBelNrRG9DeVB4SHp0RFMwaHNoaldRMlhSQnY0dnQ4VHBQYVF4bW5GZGxoOUtwemE5ZFd1MHNjN3l2RkkvcFNaZWhpaTFzUmpoM2RtY0tXQ2ZEYmd4MWZCejlORnBMU1ZBTUhyNkZyVkJ0UGF1eDBsMkxXVmt1ZHBIR1FrdDdQSmJMd2JRUDVaNHdoTzRTQXBFdGNoRUJwUC92dnVkbUxjQnRTbnN4a1dKcEJoaFg3enU5OThHRGgwZ05yUFhHaGN6ZUI0TmdFeFJQMHFWSVgzZ05JRytwSEdHckZUVUJKUFBGOFZJeU0wMHQ5TTFITXNlM094Uk5OSVNONEh0cXpZWXVobmk4Wk16eEZ2akpJNUFleW0wWkcrbDVrUVRPNGZwazJGL09YdTl5MWlxdWFOSWdyMkY3amlheEtINWdPMDQ2cEJpR1MrcG5kQ1FGWEVEcVN6b3RURld4SzRsY2hMQmxLekFYblZZR054SElOazRDSG9tVW1HS04wRjlaUFljZkIxU0laOTVsbkxVMXpzWW5jV3VzcytQbS9pYkIxODltQnh5UTUzc1h0MVRmV0hqSXNETUQzbkNqbU9wb2tiQytvbkpDWFlQWU9YdWtTRDl0UkdoTTJKelZUL1VjbE9vUDJHYStyYkh6cUdwNVpqNUd6dHBXR284WEVlUS9JV3NMQUtBYmtlOC9IdDQ3b2pSamxld2NGa3ZKcDBEc0JWOENWZkplRlkiLCJpc3MiOiJ0c2luY28uaXIiLCJleHAiOjE3OTI3NTkyMzB9.Q1BWcCH1lv5AIUHaONSiOU-rhDmtJsMpGLW2KR3nrAQ#MUkpUyQfeXfadco-ONh3sp1BeGVKkoHb'
+                },
+                contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                success: function (d) {
+                    if (type == 1) {
+                        document.getElementById("token").value = "";
+                        document.getElementById("ssoLogOut").submit();
+                    } else if (type == 2) {
+                        window.location.replace('../home/DelegationList');
+                    }
+                },
+                error: function (e) {
+
+                }
+            });
+        }
+    }
+
+    function redirectFrm(url) {
+        document.getElementById("frmHandller").action = url;
+        document.getElementById("frmHandller").submit();
+    }
+
+
+</script>
+<script>
+    function changePosition() {
+        document.getElementById('posId').value = document.getElementById('up-id').value;
+        document.getElementById('positionFrm').submit();
+    }
+</script>
+<script>
+    function setInputDateFunctionality() {
+        var pdt = '1405/08/01';
+        var dateInput = document.querySelectorAll('input[type="input-date"]');
+        for (var i = 0; i < dateInput.length; i++) {
+            dateInput[i].addEventListener("click", function (e) {
+                PersianDatePicker.Show(e.target, pdt);
+            });
+        }
+    }
+
+    setInputDateFunctionality();
+    var result;
+
+    function validateElement(el) {
+        el.classList.remove('input-border-error');
+        if (el.value === "" || el.value === null || el.value === undefined || el.value === "-1") {
+            el.classList.add('input-border-error');
+            result = false;
+        }
+    }
+
+    function validator() {
+        result = true;
+        var inps = document.querySelectorAll('[is-required]');
+        inps.forEach(function (el) {
+            validateElement(el);
+        });
+        if (result == false) {
+            toast('لطفا فیلد های اجباری را پر کنید', '#d71921', 5);
+            loaderOff();
+        }
+        return result;
+    }
+
+    function searchable() {
+        var inps = document.querySelectorAll('[is-searched]');
+        var c1 = 0;
+        var c2 = 0;
+        try {
+            inps.forEach(function (el) {
+                c1++;
+                if (el.value === "" || el.value === null || el.value === undefined || el.value === "-1") {
+                    c2++;
+                }
+            });
+        } catch {
+        }
+        if (c1 > 0 && c2 > 0 && c2 == c1) {
+            toast('جهت جستجو لطفا حداقل یک فیلد را پر نمایید.', '#d71921', 5);
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>
+<script>
+    $(document).ajaxSuccess(function (event, xhr, settings) {
+        try {
+            var res = JSON.parse(xhr.responseText);
+            if (res.error != undefined && res.error != null) {
+                window.location.replace(res.error);
+            }
+        } catch (e) {
+            if (res == '../') {
+                window.location.replace(res);
+            }
+        }
+    });
+
+    function checkNullable(value) {
+        if (value === null || value === undefined) {
+            return "";
+        } else
+            return value;
+    }
+
+
+    function closeWindow() {
+        window.close();
+    }
+
+    window.addEventListener('load', function () {
+        var address = window.location.pathname;
+        let menus = [
+
+            {path: ' ../home/home', id: 'h', parentId: 'h1'},
+            {path: '/BasicOperation/BusinessList', id: 'b1', parentId: 'b'},
+            {path: '/PersonalInformation/PersonalInformation', id: 'b2', parentId: 'b'},
+            {path: '/BasicOperation/Requests', id: 'b3', parentId: 'b'},
+            {path: '/BasicOperation/TransferOffers', id: 'b4', parentId: 'b'},
+            {path: '/BasicOperation/TafvisOffers', id: 'b5', parentId: 'b'},
+            {path: '/BasicOperation/FranchiseOffer', id: 'b6', parentId: 'b'},
+            {path: '/DomainViolations/DomainList', id: 'd', parentId: 'd'},
+            {path: '/Support/SupportRequest', id: 's1', parentId: 's'},
+            {path: '/Support/SupportRecordsList', id: 's2', parentId: 's'},
+            {path: '/Support/', id: 'ii', parentId: 'i'},
+            {path: '/Support/', id: 'i2', parentId: 'i'},
+        ];
+        try {
+            var li = menus.find(({path}) => path === address);
+            if (li) {
+                document.getElementById(li.id).classList.add('active');
+                document.getElementById(li.parentId).classList.add('active');
+                if (li.pnode !== undefined) {
+                    document.getElementById(li.pnode).classList.add('active');
+                }
+            }
+        } catch (e) {
+
+        }
+    });
+</script>
+<script>loaderOff();</script>
+<script>
+    function addNewBusiness() {
+        document.getElementById("frmHandller").method = "POST";
+        document.getElementById("dId").value = 0;
+        document.getElementById("rId").value = 0;
+        document.getElementById("frmHandller").action = '/PersonalInformation/PersonalInformation';
+        document.getElementById("frmHandller").submit();
+    }
+</script>
+
+<script>
+    function rateClick() {
+        loaderOn();
+        $.ajax({
+            type: "POST",
+            url: "/logRank",
+            data: {
+                "token": 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiVDZhdXNUMHhuOHlnZW1mbTdmTGQxUHJjeEQ3NTJwRE0yYTdKUmtqRGJVVitoamdXbzBJcFZvVHlVeFczMlFtVVZSM3hpZnBwYU9uT2xDc1VSaXF3WXVFOXp4VGFYUUcwMWkyYlhpMUdkTDBUbTlQQWhLZ0FGNDNLSzdRTmNuKzBDTWdCd2RnY3E2bDEyQWlFY0RBYnBlK216ZXV3ekZ3a0VhYk1QOHBLaUxEQzBJSnR2MnMvYVJyekthaHlmTWh2WXNJclRTVFZsdnB5aHB1aldlemd5TWVDZW9Ib0E3NDZaRVllcWhOa21CajdYUHpMRXcrc1ZCM1BCdFJ2R3hkVnlJc2ZVWVZQTEVLc1F5dHhReEFIcmFBd21pdlMyTlExditZNS94WjhvQWViVCt0MytSMTRDd1JuSzhrb05UbjUwQkxLeXpyYVhnOFUyc29ObXpteUF6ZGhtSEc0WTkrNVhBQlUrQ0Y1SXhiQ0l3bzN5aklVVVJWbHpIRWtxQ1BRK0RWM0EvZWlsaDNWa3NtaGJJMzA5VmxHQ3RNdGNScWxmL0w0UzFZMUtLSWkyWC90OWkyTDhySWRIcVFMU0RCaURyKzBMZjBuYmp4SWNOUFcwOGhKbWVjSmlybTBzcEczQlVEd0pZOEw1emhJdTJKaitMWlV2UzhXT2tGUTVsN3pIckZTcUxnTmg0OUlJLzIxcEJSdWpwRXJBelNrRG9DeVB4SHp0RFMwaHNoaldRMlhSQnY0dnQ4VHBQYVF4bW5GZGxoOUtwemE5ZFd1MHNjN3l2RkkvcFNaZWhpaTFzUmpoM2RtY0tXQ2ZEYmd4MWZCejlORnBMU1ZBTUhyNkZyVkJ0UGF1eDBsMkxXVmt1ZHBIR1FrdDdQSmJMd2JRUDVaNHdoTzRTQXBFdGNoRUJwUC92dnVkbUxjQnRTbnN4a1dKcEJoaFg3enU5OThHRGgwZ05yUFhHaGN6ZUI0TmdFeFJQMHFWSVgzZ05JRytwSEdHckZUVUJKUFBGOFZJeU0wMHQ5TTFITXNlM094Uk5OSVNONEh0cXpZWXVobmk4Wk16eEZ2akpJNUFleW0wWkcrbDVrUVRPNGZwazJGL09YdTl5MWlxdWFOSWdyMkY3amlheEtINWdPMDQ2cEJpR1MrcG5kQ1FGWEVEcVN6b3RURld4SzRsY2hMQmxLekFYblZZR054SElOazRDSG9tVW1HS04wRjlaUFljZkIxU0laOTVsbkxVMXpzWW5jV3VzcytQbS9pYkIxODltQnh5UTUzc1h0MVRmV0hqSXNETUQzbkNqbU9wb2tiQytvbkpDWFlQWU9YdWtTRDl0UkdoTTJKelZUL1VjbE9vUDJHYStyYkh6cUdwNVpqNUd6dHBXR284WEVlUS9JV3NMQUtBYmtlOC9IdDQ3b2pSamxld2NGa3ZKcDBEc0JWOENWZkplRlkiLCJpc3MiOiJ0c2luY28uaXIiLCJleHAiOjE3OTI3NTkyMzB9.Q1BWcCH1lv5AIUHaONSiOU-rhDmtJsMpGLW2KR3nrAQ#MUkpUyQfeXfadco-ONh3sp1BeGVKkoHb'
+            },
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            success: function (res) {
+                loaderOff();
+            },
+            error: function (e) {
+                loaderOff();
+            }
+        });
+        document.getElementById("rotbeBandiFrm").submit();
+    }
+</script>
+<script>
+    function getShekayatUrl() {
+        loaderOn();
+        $.ajax({
+            type: "POST",
+            url: "/redirectToShekayat",
+            data: {
+                "token": 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiVDZhdXNUMHhuOHlnZW1mbTdmTGQxUHJjeEQ3NTJwRE0yYTdKUmtqRGJVVitoamdXbzBJcFZvVHlVeFczMlFtVVZSM3hpZnBwYU9uT2xDc1VSaXF3WXVFOXp4VGFYUUcwMWkyYlhpMUdkTDBUbTlQQWhLZ0FGNDNLSzdRTmNuKzBDTWdCd2RnY3E2bDEyQWlFY0RBYnBlK216ZXV3ekZ3a0VhYk1QOHBLaUxEQzBJSnR2MnMvYVJyekthaHlmTWh2WXNJclRTVFZsdnB5aHB1aldlemd5TWVDZW9Ib0E3NDZaRVllcWhOa21CajdYUHpMRXcrc1ZCM1BCdFJ2R3hkVnlJc2ZVWVZQTEVLc1F5dHhReEFIcmFBd21pdlMyTlExditZNS94WjhvQWViVCt0MytSMTRDd1JuSzhrb05UbjUwQkxLeXpyYVhnOFUyc29ObXpteUF6ZGhtSEc0WTkrNVhBQlUrQ0Y1SXhiQ0l3bzN5aklVVVJWbHpIRWtxQ1BRK0RWM0EvZWlsaDNWa3NtaGJJMzA5VmxHQ3RNdGNScWxmL0w0UzFZMUtLSWkyWC90OWkyTDhySWRIcVFMU0RCaURyKzBMZjBuYmp4SWNOUFcwOGhKbWVjSmlybTBzcEczQlVEd0pZOEw1emhJdTJKaitMWlV2UzhXT2tGUTVsN3pIckZTcUxnTmg0OUlJLzIxcEJSdWpwRXJBelNrRG9DeVB4SHp0RFMwaHNoaldRMlhSQnY0dnQ4VHBQYVF4bW5GZGxoOUtwemE5ZFd1MHNjN3l2RkkvcFNaZWhpaTFzUmpoM2RtY0tXQ2ZEYmd4MWZCejlORnBMU1ZBTUhyNkZyVkJ0UGF1eDBsMkxXVmt1ZHBIR1FrdDdQSmJMd2JRUDVaNHdoTzRTQXBFdGNoRUJwUC92dnVkbUxjQnRTbnN4a1dKcEJoaFg3enU5OThHRGgwZ05yUFhHaGN6ZUI0TmdFeFJQMHFWSVgzZ05JRytwSEdHckZUVUJKUFBGOFZJeU0wMHQ5TTFITXNlM094Uk5OSVNONEh0cXpZWXVobmk4Wk16eEZ2akpJNUFleW0wWkcrbDVrUVRPNGZwazJGL09YdTl5MWlxdWFOSWdyMkY3amlheEtINWdPMDQ2cEJpR1MrcG5kQ1FGWEVEcVN6b3RURld4SzRsY2hMQmxLekFYblZZR054SElOazRDSG9tVW1HS04wRjlaUFljZkIxU0laOTVsbkxVMXpzWW5jV3VzcytQbS9pYkIxODltQnh5UTUzc1h0MVRmV0hqSXNETUQzbkNqbU9wb2tiQytvbkpDWFlQWU9YdWtTRDl0UkdoTTJKelZUL1VjbE9vUDJHYStyYkh6cUdwNVpqNUd6dHBXR284WEVlUS9JV3NMQUtBYmtlOC9IdDQ3b2pSamxld2NGa3ZKcDBEc0JWOENWZkplRlkiLCJpc3MiOiJ0c2luY28uaXIiLCJleHAiOjE3OTI3NTkyMzB9.Q1BWcCH1lv5AIUHaONSiOU-rhDmtJsMpGLW2KR3nrAQ#MUkpUyQfeXfadco-ONh3sp1BeGVKkoHb'
+            },
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            success: function (res) {
+                loaderOff();
+                if (res.r == '1' || res.r == 1) {
+                    document.getElementById("shekayatFrm").action = res.redirectUrl;
+                    document.getElementById("shekayatFrm").submit();
+                } else {
+                    // toast(res.msg, res.msgColor, 5);
+                }
+            },
+            error: function (e) {
+                loaderOff();
+            }
+        });
+    }
+</script>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+<script>
+    window.onsubmit = function () {
+        loaderOff();
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
